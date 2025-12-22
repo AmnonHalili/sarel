@@ -73,7 +73,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-brand-text mb-1">טלפון ישיר</h3>
-                                    <p className="text-gray-600 text-lg dir-ltr text-right">05X-XXX-XXXX</p>
+                                    <p className="text-gray-600 text-lg dir-ltr text-right">050-572-8489</p>
                                     <p className="text-sm text-gray-500 mt-1">זמין גם בוואטסאפ</p>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-brand-text mb-1">אימייל</h3>
-                                    <p className="text-gray-600 text-lg">office@sarel-halfon.co.il</p>
+                                    <p className="text-gray-600 text-lg">H0505728489@gmail.com</p>
                                 </div>
                             </div>
                         </FadeIn>
@@ -98,7 +98,19 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-brand-text mb-1">אזורי פעילות</h3>
-                                    <p className="text-gray-600 text-lg">כל הארץ (התמקדות בגוש דן והשרון)</p>
+                                    <p className="text-gray-600 text-lg font-medium">אשקלון</p>
+
+                                    <div className="mt-4 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                        <p className="text-sm text-brand-gold font-bold mb-2">פרויקטים נבחרים בטיפול:</p>
+                                        <ul className="text-gray-600 space-y-1 text-sm">
+                                            <li>• בר כוכבא 9</li>
+                                            <li>• ברגסון 1-5</li>
+                                            <li>• ביאליק 8-12</li>
+                                            <li>• ביאליק 36-40</li>
+                                            <li>• חידא 3-11</li>
+                                            <li>• חננאל 2</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </FadeIn>

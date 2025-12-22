@@ -77,7 +77,7 @@ const Process = () => {
                                     </div>
 
                                     {/* Content Card */}
-                                    <div className={`w-full md:w-1/2 pl-20 md:pl-0 ${index % 2 === 0 ? 'md:pl-12 text-right' : 'md:pr-12 text-right'} pr-4`}>
+                                    <div className={`w-full md:w-1/2 pr-20 md:pr-0 pl-4 md:pl-0 ${index % 2 === 0 ? 'md:pl-12 text-right' : 'md:pr-12 text-right'}`}>
                                         <FadeIn delay={index * 0.2 + 0.2} direction={index % 2 === 0 ? "right" : "left"}>
                                             <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
                                                 <div className="text-brand-gold font-bold text-sm mb-2 tracking-wider">שלב {step.id}</div>
