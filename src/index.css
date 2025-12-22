@@ -11,6 +11,34 @@
   --color-brand-goldHover: #a68558;
 }
 
+/* Accessibility Utilities */
+.acc-high-contrast {
+  filter: contrast(150%);
+  --color-brand-text: #000000;
+  --color-brand-dark: #ffffff;
+}
+
+.acc-high-contrast * {
+  background-color: #000 !important;
+  color: #ffeb3b !important;
+  border-color: #ffeb3b !important;
+}
+
+.acc-black-white {
+  filter: grayscale(100%);
+}
+
+.acc-highlight-links a {
+  text-decoration: underline !important;
+  background-color: #ffeb3b !important;
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+.acc-readable-font * {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

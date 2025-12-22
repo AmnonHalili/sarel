@@ -9,7 +9,7 @@ const WhatsAppButton = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-6 left-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-2xl hover:bg-[#20b858] transition-all hover:scale-110 hover:shadow-[0_0_20px_rgba(37,211,102,0.5)] animate-bounce-subtle"
+            className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-[#25D366] rounded-full shadow-2xl hover:bg-[#20b858] transition-all hover:scale-110 hover:shadow-[0_0_20px_rgba(37,211,102,0.5)] animate-bounce-subtle"
             aria-label="Contact on WhatsApp"
         >
             <svg
