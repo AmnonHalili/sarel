@@ -45,7 +45,7 @@ const Hero = () => {
 
                 {/* Building Image */}
                 <FadeIn delay={0.4} direction="left">
-                    <div className="relative hidden md:block h-[600px] w-full rounded-2xl overflow-hidden border-4 border-white shadow-2xl group">
+                    <div className="relative block h-[350px] md:h-[600px] w-full rounded-2xl overflow-hidden border-4 border-white shadow-2xl group mt-8 md:mt-0">
                         <div className="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                         <img
                             src="/hero-building.png"
