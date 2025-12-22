@@ -44,16 +44,16 @@ const AccessibilityWidget = () => {
     const toggleOpen = () => setIsOpen(!isOpen);
 
     return (
-        <div className="fixed top-1/2 left-0 z-[100] -translate-y-1/2 font-sans dir-rtl">
+        <div className="fixed top-[75%] md:top-1/2 left-0 z-[100] -translate-y-1/2 font-sans dir-rtl">
             {/* Toggle Button */}
             {!isOpen && (
                 <button
                     onClick={toggleOpen}
-                    className="bg-brand-text text-white p-3 pr-4 rounded-r-xl shadow-lg hover:bg-slate-800 transition-colors flex items-center gap-2 group"
+                    className="bg-brand-text text-white p-2 md:p-3 pr-3 md:pr-4 rounded-r-xl shadow-lg hover:bg-slate-800 transition-colors flex items-center gap-2 group"
                     aria-label="פתח תפריט נגישות"
                 >
-                    <Eye className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                    <span className="text-xs font-bold">נגישות</span>
+                    <Eye className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
+                    <span className="text-[10px] md:text-xs font-bold">נגישות</span>
                 </button>
             )}
 
