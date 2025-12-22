@@ -5,60 +5,49 @@ import { FadeIn } from './Reveal';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-[90vh] flex items-center bg-slate-50 overflow-hidden">
-            {/* Background Effect - Clean Light Pattern */}
-            <div className="absolute inset-0 z-0 opacity-40">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-brand-gold/10 via-white to-white" />
-                <div className="w-full h-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+
+            {/* Background Image & Overlay */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="/hero-building.png"
+                    alt="התחדשות עירונית יוקרתית"
+                    className="w-full h-full object-cover"
+                />
+                {/* Darker Overlay for better text readability */}
+                <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-slate-900/80" />
             </div>
 
-            <div className="container mx-auto px-4 z-10 grid md:grid-cols-2 gap-12 items-center">
-                {/* Content */}
+            <div className="container mx-auto px-4 z-10 relative text-center max-w-5xl">
                 <div className="space-y-8">
-                    <FadeIn delay={0.2}>
-                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-brand-text">
+                    <FadeIn delay={0.2} direction="up" fullWidth>
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white drop-shadow-xl">
                             המייצג שלכם <br />
-                            <span className="text-brand-gold">בפינוי בינוי</span> <br />
-                            מהרגע הראשון ועד המפתח.
+                            <span className="text-brand-gold bg-clip-text">בפינוי בינוי</span> <br />
+                            <span className="text-2xl md:text-4xl font-light opacity-90 block mt-4">מהרגע הראשון ועד המפתח.</span>
                         </h1>
                     </FadeIn>
 
-                    <FadeIn delay={0.4}>
-                        <p className="text-xl text-gray-600 leading-relaxed font-light border-r-4 border-brand-gold pr-6">
-                            <strong className="text-brand-text block mb-2">שראל ישראל חלפון</strong>
+                    <FadeIn delay={0.4} direction="up" fullWidth>
+                        <p className="text-xl md:text-2xl text-gray-100 leading-relaxed font-light max-w-3xl mx-auto drop-shadow-md">
+                            <strong className="text-brand-gold font-bold block mb-2 text-2xl">שראל ישראל חלפון</strong>
                             מארגן דיירים שדואג לאינטרס שלכם בלבד. מקסימום תמורה, ביטחון מלא ושקט נפשי.
                         </p>
                     </FadeIn>
 
-                    <FadeIn delay={0.6}>
-                        <div className="pt-4">
+                    <FadeIn delay={0.6} direction="up" fullWidth>
+                        <div className="pt-8 flex justify-center">
                             <a
                                 href="#contact"
-                                className="inline-flex items-center gap-3 bg-gradient-to-r from-brand-gold to-brand-goldHover text-white font-bold text-lg px-8 py-4 rounded-full shadow-[0_0_20px_rgba(193,155,108,0.3)] hover:shadow-[0_0_30px_rgba(193,155,108,0.5)] transition-all transform hover:-translate-y-1"
+                                className="inline-flex items-center gap-3 bg-brand-gold text-white font-bold text-xl px-10 py-5 rounded-full shadow-[0_0_30px_rgba(193,155,108,0.4)] hover:shadow-[0_0_40px_rgba(193,155,108,0.6)] hover:bg-brand-goldHover transition-all transform hover:-translate-y-1 backdrop-blur-sm border border-white/20"
                             >
                                 לקביעת פגישת היכרות ללא התחייבות
-                                <ChevronLeft className="w-5 h-5" />
+                                <ChevronLeft className="w-6 h-6" />
                             </a>
                         </div>
                     </FadeIn>
                 </div>
-
-                {/* Building Image */}
-                <FadeIn delay={0.4} direction="left">
-                    <div className="relative block h-[350px] md:h-[600px] w-full rounded-2xl overflow-hidden border-4 border-white shadow-2xl group mt-8 md:mt-0">
-                        <div className="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                        <img
-                            src="/hero-building.png"
-                            alt="פרויקט פינוי בינוי יוקרתי"
-                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                        />
-                        {/* Floating Badge */}
-                        <div className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-md p-6 rounded-xl shadow-lg border-r-4 border-brand-gold z-20 max-w-xs animate-float">
-                            <p className="font-bold text-brand-text text-lg mb-1">סטנדרט מגורים חדש</p>
-                            <p className="text-gray-600 text-sm">התחדשות עירונית שמשדרגת את איכות החיים</p>
-                        </div>
-                    </div>
-                </FadeIn>
             </div>
         </section>
     );
