@@ -3,6 +3,35 @@ import { Send, Phone, Mail, MapPin } from 'lucide-react';
 import { FadeIn, Reveal } from './Reveal';
 
 const Contact = () => {
+    const [formData, setFormData] = React.useState({
+        name: '',
+        phone: '',
+        address: ''
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Validation
+        if (!formData.name || !formData.phone) {
+            alert('נא למלא שם וטלפון');
+            return;
+        }
+
+        const phoneNumber = '972505728489';
+        const text = `שלום שראל, אני פונה אליך מהאתר.%0A%0Aשם: ${formData.name}%0Aטלפון: ${formData.phone}%0Aכתובת הפרויקט: ${formData.address || 'לא צוינה'}%0A%0Aאשמח לפרטים נוספים.`;
+
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+        window.open(whatsappUrl, '_blank');
+    };
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.id]: e.target.value
+        });
+    };
+
     return (
         <section id="contact" className="py-24 bg-gradient-to-b from-white to-gray-50 border-t border-gray-100">
             <div className="container mx-auto px-4 max-w-5xl">
@@ -22,14 +51,17 @@ const Contact = () => {
                     {/* Contact Form */}
                     <FadeIn direction="right" fullWidth>
                         <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl">
-                            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                            <form className="space-y-6" onSubmit={handleSubmit}>
                                 <div>
                                     <label className="block text-gray-600 text-sm font-bold mb-2" htmlFor="name">שם מלא</label>
                                     <input
                                         id="name"
                                         type="text"
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-brand-text focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
                                         placeholder="ישראל ישראלי"
+                                        required
                                     />
                                 </div>
 
@@ -38,8 +70,11 @@ const Contact = () => {
                                     <input
                                         id="phone"
                                         type="tel"
+                                        value={formData.phone}
+                                        onChange={handleChange}
                                         className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-brand-text focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
                                         placeholder="050-0000000"
+                                        required
                                     />
                                 </div>
 
@@ -48,6 +83,8 @@ const Contact = () => {
                                     <input
                                         id="address"
                                         type="text"
+                                        value={formData.address}
+                                        onChange={handleChange}
                                         className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-brand-text focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
                                         placeholder="רחוב ומספר"
                                     />
