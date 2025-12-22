@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Heebo', sans-serif;
+  --color-brand-dark: #f8fafc;
+  /* Changed to slate-50 for light background */
+  --color-brand-text: #0f172a;
+  /* New dark color for text (slate-900) */
+  --color-brand-gold: #c19b6c;
+  /* Light Brown/Bronze */
+  --color-brand-goldHover: #a68558;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-dark text-brand-text font-sans antialiased;
+  }
+}
