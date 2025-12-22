@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     const [isAccessibilityModalOpen, setIsAccessibilityModalOpen] = useState(false);
 
     return (
-        <div className="min-h-screen flex flex-col font-sans">
+        <div className="min-h-screen flex flex-col font-sans w-full max-w-[100vw] overflow-x-hidden relative">
             <AccessibilityWidget />
             <Header />
             <main className="flex-grow">
