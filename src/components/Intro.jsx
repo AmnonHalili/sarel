@@ -4,27 +4,44 @@ import { FadeIn, Reveal } from './Reveal';
 
 const Intro = () => {
     return (
-        <section id="about" className="py-20 bg-white border-t border-gray-100">
-            <div className="container mx-auto px-4 max-w-4xl text-center">
+        <section id="intro" className="py-16 md:py-24 bg-white relative overflow-hidden">
+            <div className="container mx-auto px-6 max-w-6xl relative z-10">
 
-                <div className="mb-16">
-                    <Reveal width="100%">
-                        <h2 className="text-3xl md:text-5xl font-bold text-brand-text mb-8">
-                            מה התפקיד שלי <span className="text-brand-gold">כמארגן דיירים?</span>
-                        </h2>
-                    </Reveal>
+                <div className="grid md:grid-cols-2 gap-12 items-center">
 
-                    <FadeIn delay={0.2} fullWidth>
-                        <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl relative overflow-hidden group hover:border-brand-gold/30 transition-colors">
-                            <div className="absolute top-0 right-0 p-8 opacity-5 text-brand-gold">
-                                <ShieldCheck size={120} />
-                            </div>
+                    {/* Text Content */}
+                    <div className="space-y-6 md:space-y-8 text-center md:text-right">
+                        <Reveal>
+                            <h2 className="text-3xl md:text-5xl font-bold text-brand-text leading-tight">
+                                מי דואג  <span className="text-brand-gold">לאינטרסים שלכם?</span>
+                            </h2>
+                        </Reveal>
 
-                            <p className="text-xl md:text-2xl leading-relaxed text-gray-600 relative z-10">
-                                "אני לא היזם ואני לא עורך הדין. <span className="text-brand-gold font-bold">אני הגוף שמנהל את התהליך עבורכם.</span> המטרה שלי היא לייצג את האינטרס של בעלי הדירות בלבד, לגבש אתכם לכוח אחד חזק ולהוביל אתכם לעסקה הבטוחה והרווחית ביותר מול היזמים."
+                        <Reveal delay={0.2}>
+                            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                                בפרויקט התחדשות עירונית, היזם דואג לרווח שלו, הקבלן דואג לבנייה, והעירייה דואגת לעיר.
+                                <br /><strong>אבל מי דואג לכם, הדיירים?</strong>
                             </p>
-                        </div>
-                    </FadeIn>
+                            <p className="text-lg md:text-xl text-gray-600 leading-relaxed mt-4">
+                                נעים להכיר, שראל ישראל חלפון. התפקיד שלי הוא להיות המגן שלכם. לוודא שאתם מקבלים את המקסימום המגיע לכם, בלי אותיות קטנות ובלי פשרות.
+                            </p>
+                        </Reveal>
+                    </div>
+
+                    {/* Image/Illustration */}
+                    <div className="relative flex justify-center md:justify-start">
+                        <FadeIn delay={0.4} direction="right">
+                            <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl relative overflow-hidden group hover:border-brand-gold/30 transition-colors">
+                                <div className="absolute top-0 right-0 p-8 opacity-5 text-brand-gold">
+                                    <ShieldCheck size={120} />
+                                </div>
+
+                                <p className="text-xl md:text-2xl leading-relaxed text-gray-600 relative z-10">
+                                    "אני לא היזם ואני לא עורך הדין. <span className="text-brand-gold font-bold">אני הגוף שמנהל את התהליך עבורכם.</span> המטרה שלי היא לייצג את האינטרס של בעלי הדירות בלבד, לגבש אתכם לכוח אחד חזק ולהוביל אתכם לעסקה הבטוחה והרווחית ביותר מול היזמים."
+                                </p>
+                            </div>
+                        </FadeIn>
+                    </div>
                 </div>
 
                 {/* Quick Value Props Grid */}

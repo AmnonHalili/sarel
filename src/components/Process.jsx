@@ -68,16 +68,16 @@ const Process = () => {
                                 <div key={step.id} className={`relative flex items-center md:items-start gap-8 md:gap-0 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
 
                                     {/* Icon & Number Circle */}
-                                    <div className="absolute top-0 right-0 md:relative md:w-1/2 flex md:justify-end z-10 md:pl-12 md:pb-0 shrink-0">
+                                    <div className={`absolute top-0 right-0 md:relative md:w-1/2 flex z-10 md:pb-0 shrink-0 ${index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'}`}>
                                         <FadeIn delay={index * 0.2} direction="down">
-                                            <div className={`w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center relative shadow-lg ${index % 2 === 0 ? 'md:-ml-7' : 'md:-mr-7 md:ml-0'} md:right-auto right-0`}>
+                                            <div className={`w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center relative shadow-lg ${index % 2 === 0 ? 'md:-ml-7' : 'md:-mr-7'} right-0`}>
                                                 <Icon size={24} className="text-brand-gold" />
                                             </div>
                                         </FadeIn>
                                     </div>
 
                                     {/* Content Card */}
-                                    <div className={`w-full md:w-1/2 pr-20 md:pr-0 pl-4 md:pl-0 ${index % 2 === 0 ? 'md:pl-12 text-right' : 'md:pr-12 text-right'}`}>
+                                    <div className={`w-full md:w-1/2 pr-20 md:pr-0 pl-4 md:pl-0 ${index % 2 === 0 ? 'md:pr-12 text-right' : 'md:pl-12 text-right'}`}>
                                         <FadeIn delay={index * 0.2 + 0.2} direction={index % 2 === 0 ? "right" : "left"}>
                                             <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
                                                 <div className="text-brand-gold font-bold text-sm mb-2 tracking-wider">שלב {step.id}</div>

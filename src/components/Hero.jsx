@@ -19,13 +19,13 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-slate-900/80" />
             </div>
 
-            <div className="container mx-auto px-4 z-10 relative text-center max-w-5xl">
-                <div className="space-y-8">
+            <div className="container mx-auto px-6 z-10 relative text-center max-w-5xl">
+                <div className="space-y-6 md:space-y-8">
                     <FadeIn delay={0.2} direction="up" fullWidth>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white drop-shadow-xl">
+                        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white drop-shadow-xl">
                             המייצג שלכם <br />
                             <span className="text-brand-gold bg-clip-text">בפינוי בינוי</span> <br />
-                            <span className="text-2xl md:text-4xl font-light opacity-90 block mt-4">מהרגע הראשון ועד המפתח.</span>
+                            <span className="text-xl sm:text-2xl md:text-4xl font-light opacity-90 block mt-3 md:mt-4">מהרגע הראשון ועד המפתח.</span>
                         </h1>
                     </FadeIn>
 

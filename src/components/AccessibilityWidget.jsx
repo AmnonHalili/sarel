@@ -49,7 +49,7 @@ const AccessibilityWidget = () => {
             {!isOpen && (
                 <button
                     onClick={toggleOpen}
-                    className="bg-brand-text text-white p-2 md:p-3 pr-3 md:pr-4 rounded-r-xl shadow-lg hover:bg-slate-800 transition-colors flex items-center gap-2 group"
+                    className="bg-brand-text/95 backdrop-blur-sm text-white p-2 md:p-3 pr-3 md:pr-4 rounded-r-xl shadow-lg border border-white/10 hover:bg-slate-800 transition-colors flex items-center gap-2 group"
                     aria-label="פתח תפריט נגישות"
                 >
                     <Eye className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
