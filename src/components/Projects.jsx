@@ -8,8 +8,7 @@ import project2 from '../assets/projects/project2.jpg';
 import project3 from '../assets/projects/project3.jpg';
 import project4 from '../assets/projects/project4.jpg';
 import project5 from '../assets/projects/project5.jpg';
-// Placeholder for the 6th project (using project 1 again or a placeholder if available, usually just reusing ensures layout works)
-const project6 = project1;
+import project6 from '../assets/projects/project6.jpg';
 
 const projects = [
     {
@@ -69,7 +68,7 @@ const projects = [
         role: "מארגן דיירים",
         status: "בחירת נציגות דיירים",
         stage: "שלב 2 | מינוי נציגות",
-        image: project6, // Placeholder
+        image: project6,
         stageNumber: 2
     }
 ];
