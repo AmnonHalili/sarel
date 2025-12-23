@@ -1,38 +1,38 @@
 import React from 'react';
-import { Users, HardHat, TrendingUp, FileCheck, Key } from 'lucide-react';
+import { Users, HardHat, FileCheck, Scale, UserCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FadeIn, Reveal } from './Reveal';
 
 const steps = [
     {
         id: 1,
-        title: 'גיבוש ויצירת אמון',
-        description: 'מיפוי בעלי הזכויות, פגישות אישיות ויצירת גרעין תומך למניעת פילוג.',
+        title: 'הנעת המתחם ובניית אמון',
+        description: 'כניסה יזומה למתחם, איסוף פרטי קשר וקיום כנסים נפרדים לכל בניין. יצירת אמון עם הדיירים והצגת התהליך, הזכויות והשלבים הצפויים בצורה ברורה ושקופה.',
         icon: Users
     },
     {
         id: 2,
-        title: 'בחירת יזם מנצח',
-        description: 'מכרז יזמים קפדני. בדיקת איתנות פיננסית, ניסיון ביצוע והשוואת מפרטים (לא רק מ"ר).',
-        icon: HardHat
+        title: 'מינוי נציגות דיירים',
+        description: 'בחירת נציגות מקרב הדיירים ואישור של 51% מבעלי הדירות להסמכתה כנציגות רשמית המייצגת את המתחם.',
+        icon: UserCheck
     },
     {
         id: 3,
-        title: 'ניהול מו"מ עיקש',
-        description: 'שיפור תמורות (שטח, מחסן, חניה), דרישה לבטוחות מחמירות ושמירה על שוויון בין הדיירים.',
-        icon: TrendingUp
+        title: 'בחירת עורך דין דיירים',
+        description: 'הנציגות בוחרת עורך דין מטעמה, כולל אפשרות לעורך דין שמוצע על ידי הדיירים עצמם. אני מלווה את תהליך הבחירה ומסייע בקידום התקשרות מקצועית ונכונה.',
+        icon: Scale
     },
     {
         id: 4,
-        title: 'השגת הרוב החוקי',
-        description: 'ליווי אישי של כל דייר, טיפול בחששות ותיאום חתימות מסודר לקידום הפרויקט.',
-        icon: FileCheck
+        title: 'מכרז יזמים ומשא ומתן',
+        description: 'ניהול מכרז יזמים מסודר בין מספר חברות מתאימות לפרויקט וניהול משא ומתן ביניהן להשגת מקסימום תמורות עבור הדיירים. הנציגות היא זו שבוחרת את החברה היזמית עמה יתקדם הפרויקט.',
+        icon: HardHat
     },
     {
         id: 5,
-        title: 'ליווי עד המפתח',
-        description: 'פיקוח על התקדמות התכנון, ההיתרים והביצוע, וכתובת אחת זמינה לכל שאלה.',
-        icon: Key
+        title: 'קידום משפטי והתקדמות לביצוע',
+        description: 'קידום ההסכם המשפטי מול החברה היזמית הנבחרת והשגת 67% חתימות והערות אזהרה לטובת פינוי בינוי. לאחר מכן, קידום הפרויקט לשלבי תכנון, היתרים וביצוע.',
+        icon: FileCheck
     }
 ];
 
@@ -45,9 +45,25 @@ const Process = () => {
             <div className="container mx-auto px-4">
                 <center className="mb-16">
                     <Reveal>
-                        <h2 className="text-3xl md:text-5xl font-bold text-brand-text text-center">
-                            הדרך להצלחה <span className="text-brand-gold">ב-5 צעדים</span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-brand-text text-center mb-6">
+                            דיירים במרכז. <span className="text-brand-gold">אמון ושקיפות מלאה.</span>
                         </h2>
+                    </Reveal>
+                    <Reveal delay={0.2}>
+                        <div className="max-w-3xl mx-auto text-center space-y-4 text-gray-600 px-4">
+                            <p className="text-xl font-medium text-brand-text">
+                                פרויקט שמצליח. פינוי בינוי צריך להתחיל נכון.
+                            </p>
+                            <p className="leading-relaxed">
+                                לא בלחצים, לא בהבטחות כלליות ולא בכפייה של חברות יזמיות, אלא בתהליך מסודר שבו הדיירים הם בעלי הכוח והשליטה.
+                            </p>
+                            <p className="leading-relaxed">
+                                אני מלווה מתחמי פינוי בינוי מהשלב הראשון בשטח ועד קידום הפרויקט להיתרים וביצוע, תוך בניית אמון, ארגון הדיירים וניהול משא ומתן מקצועי שמטרתו אחת: מקסימום תמורות וביטחון מלא לבעלי הדירות.
+                            </p>
+                        </div>
+                    </Reveal>
+                    <Reveal delay={0.4}>
+                        <h3 className="text-2xl font-bold text-brand-text mt-12 mb-4">איך זה עובד בפועל</h3>
                     </Reveal>
                 </center>
 
