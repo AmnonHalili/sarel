@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Scale, Users } from 'lucide-react';
 import { FadeIn, Reveal } from './Reveal';
+import sarelPortrait from '../assets/sarel-portrait.png';
 
 const Intro = () => {
     return (
@@ -10,7 +11,7 @@ const Intro = () => {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
 
                     {/* Text Content */}
-                    <div className="space-y-6 md:space-y-8 text-center md:text-right">
+                    <div className="space-y-6 md:space-y-8 text-center md:text-right order-2 md:order-1">
                         <Reveal>
                             <h2 className="text-3xl md:text-5xl font-bold text-brand-text leading-tight">
                                 מי דואג  <span className="text-brand-gold">לאינטרסים שלכם?</span>
@@ -29,16 +30,20 @@ const Intro = () => {
                     </div>
 
                     {/* Image/Illustration */}
-                    <div className="relative flex justify-center md:justify-start">
+                    <div className="relative flex justify-center md:justify-start order-1 md:order-2">
                         <FadeIn delay={0.4} direction="right">
-                            <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl relative overflow-hidden group hover:border-brand-gold/30 transition-colors">
-                                <div className="absolute top-0 right-0 p-8 opacity-5 text-brand-gold">
-                                    <ShieldCheck size={120} />
+                            <div className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                                <img
+                                    src={sarelPortrait}
+                                    alt="שראל ישראל חלפון"
+                                    className="w-full h-full object-cover object-[50%_15%] hover:scale-105 transition-transform duration-700"
+                                />
+                                {/* Quote Overlay */}
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-8 text-white">
+                                    <p className="font-bold text-lg leading-relaxed">
+                                        "אני הגוף שמנהל את התהליך עבורכם."
+                                    </p>
                                 </div>
-
-                                <p className="text-xl md:text-2xl leading-relaxed text-gray-600 relative z-10">
-                                    "אני לא היזם ואני לא עורך הדין. <span className="text-brand-gold font-bold">אני הגוף שמנהל את התהליך עבורכם.</span> המטרה שלי היא לייצג את האינטרס של בעלי הדירות בלבד, לגבש אתכם לכוח אחד חזק ולהוביל אתכם לעסקה הבטוחה והרווחית ביותר מול היזמים."
-                                </p>
                             </div>
                         </FadeIn>
                     </div>
