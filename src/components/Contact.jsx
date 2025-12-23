@@ -137,17 +137,7 @@ const Contact = () => {
                                     <h3 className="text-xl font-bold text-brand-text mb-1">אזורי פעילות</h3>
                                     <p className="text-gray-600 text-lg font-medium">אשקלון</p>
 
-                                    <div className="mt-4 bg-gray-50 p-4 rounded-xl border border-gray-100">
-                                        <p className="text-sm text-brand-gold font-bold mb-2">פרויקטים נבחרים בטיפול:</p>
-                                        <ul className="text-gray-600 space-y-1 text-sm">
-                                            <li>• בר כוכבא 9</li>
-                                            <li>• ברגסון 1-5</li>
-                                            <li>• ביאליק 8-12</li>
-                                            <li>• ביאליק 36-40</li>
-                                            <li>• חידא 3-11</li>
-                                            <li>• חננאל 2</li>
-                                        </ul>
-                                    </div>
+
                                 </div>
                             </div>
                         </FadeIn>
