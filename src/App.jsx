@@ -10,6 +10,8 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 
+import MediaGallery from './components/MediaGallery';
+
 function App() {
   return (
     <Layout>
@@ -18,6 +20,7 @@ function App() {
       <Vision />
       <Process />
       <Projects />
+      <MediaGallery />
       <USP />
       <Testimonials />
       <Contact />

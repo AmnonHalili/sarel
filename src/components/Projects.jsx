@@ -5,7 +5,8 @@ import { FadeIn, Reveal } from './Reveal';
 // Import images
 import project1 from '../assets/projects/project1.jpg';
 import project2 from '../assets/projects/project2.jpg';
-import project3 from '../assets/projects/project3.jpg';
+
+import bergsonImg from '../assets/projects/bergson.png';
 import project4 from '../assets/projects/project4.jpg';
 import project5 from '../assets/projects/project5.jpg';
 import project6 from '../assets/projects/project6.jpg';
@@ -38,7 +39,7 @@ const projects = [
         role: "מארגן דיירים",
         status: "הושלם התהליך, קידום ברשויות",
         stage: "שלב 5 | קידום להיתרים וביצוע",
-        image: project3,
+        image: bergsonImg,
         stageNumber: 5
     },
     {
