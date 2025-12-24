@@ -148,7 +148,7 @@ const Contact = () => {
                                 <p className="text-gray-600 italic">
                                     "בשבילי פינוי בינוי הוא לא רק עסקת נדל"ן, אלא הזדמנות לשפר את איכות החיים של משפחות רבות."
                                 </p>
-                                <span className="block mt-2 text-brand-gold font-bold text-sm">- שראל ישראל חלפון</span>
+                                <span className="block mt-2 text-brand-gold font-bold text-sm">- שראל חלפון</span>
                             </div>
                         </FadeIn>
                     </div>

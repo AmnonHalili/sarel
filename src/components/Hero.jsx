@@ -31,7 +31,7 @@ const Hero = () => {
 
                     <FadeIn delay={0.4} direction="up" fullWidth>
                         <p className="text-xl md:text-2xl text-gray-100 leading-relaxed font-light max-w-3xl mx-auto drop-shadow-md">
-                            <strong className="text-brand-gold font-bold block mb-2 text-2xl">שראל ישראל חלפון</strong>
+                            <strong className="text-brand-gold font-bold block mb-2 text-2xl">שראל חלפון</strong>
                             מארגן דיירים שדואג לאינטרס שלכם בלבד. מקסימום תמורה, ביטחון מלא ושקט נפשי.
                         </p>
                     </FadeIn>

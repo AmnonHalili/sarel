@@ -21,7 +21,7 @@ const Header = () => {
             <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     <div className="text-xl font-bold tracking-tight text-brand-text">
-                        שראל ישראל חלפון
+                        שראל חלפון
                     </div>
 
                     <nav className="hidden md:flex items-center gap-8 text-gray-600">
@@ -82,7 +82,7 @@ const Header = () => {
                                     <X size={24} />
                                 </button>
                                 <div className="text-lg font-bold text-brand-text">
-                                    שראל ישראל חלפון
+                                    שראל חלפון
                                 </div>
                             </div>
 

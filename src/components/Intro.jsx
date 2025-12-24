@@ -24,7 +24,7 @@ const Intro = () => {
                                 <br /><strong>אבל מי דואג לכם, הדיירים?</strong>
                             </p>
                             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mt-4">
-                                נעים להכיר, שראל ישראל חלפון. התפקיד שלי הוא להיות המגן שלכם. לוודא שאתם מקבלים את המקסימום המגיע לכם, בלי אותיות קטנות ובלי פשרות.
+                                נעים להכיר, שראל חלפון. התפקיד שלי הוא להיות המגן שלכם. לוודא שאתם מקבלים את המקסימום המגיע לכם, בלי אותיות קטנות ובלי פשרות.
                             </p>
                         </Reveal>
                     </div>
@@ -35,7 +35,7 @@ const Intro = () => {
                             <div className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                                 <img
                                     src={sarelPortrait}
-                                    alt="שראל ישראל חלפון"
+                                    alt="שראל חלפון"
                                     className="w-full h-full object-cover object-[50%_15%] hover:scale-105 transition-transform duration-700"
                                 />
                                 {/* Quote Overlay */}

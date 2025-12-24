@@ -12,7 +12,7 @@ const Footer = ({ onOpenAccessibility }) => {
     return (
         <footer className="bg-slate-900 border-t border-white/10 py-8 mt-auto">
             <div className="container mx-auto px-4 text-center">
-                <p className="text-gray-400 text-sm mb-2">© {new Date().getFullYear()} שראל ישראל חלפון - מארגן דיירים בפינוי בינוי. כל הזכויות שמורות.</p>
+                <p className="text-gray-400 text-sm mb-2">© {new Date().getFullYear()} שראל חלפון - מארגן דיירים בפינוי בינוי. כל הזכויות שמורות.</p>
                 <div className="flex justify-center gap-4 text-xs text-gray-500">
                     <button onClick={onOpenAccessibility} className="hover:text-brand-gold transition-colors underline">
                         הצהרת נגישות

@@ -111,7 +111,7 @@ const AccessibilityModal = ({ isOpen, onClose }) => {
                                 במידה ומצאתם באתר בעיה בנושא הנגישות או שאתם זקוקים עזרה, אתם מוזמנים לפנות אלינו:
                             </p>
                             <div className="mt-4 bg-gray-50 p-4 rounded-xl border border-gray-100">
-                                <p><strong>שם:</strong> שראל ישראל חלפון</p>
+                                <p><strong>שם:</strong> שראל חלפון</p>
                                 <p><strong>טלפון:</strong> 050-572-8489</p>
                                 <p><strong>אימייל:</strong> H0505728489@gmail.com</p>
                             </div>
