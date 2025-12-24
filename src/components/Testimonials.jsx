@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Star, Quote } from 'lucide-react';
 import { FadeIn, Reveal } from './Reveal';
+import RatingModal from './RatingModal';
 
 const reviews = [
     {
@@ -27,6 +28,8 @@ const reviews = [
 ];
 
 const Testimonials = () => {
+    const [isRatingModalOpen, setIsRatingModalOpen] = useState(false);
+
     return (
         <section id="testimonials" className="py-24 bg-white relative overflow-hidden">
             <div className="container mx-auto px-4">
@@ -43,7 +46,7 @@ const Testimonials = () => {
                     </Reveal>
                 </center>
 
-                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
                     {reviews.map((review, index) => (
                         <FadeIn key={review.id} delay={index * 0.2} direction="up" fullWidth>
                             <div className="bg-slate-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all h-full flex flex-col relative group">
@@ -73,7 +76,24 @@ const Testimonials = () => {
                         </FadeIn>
                     ))}
                 </div>
+
+                <center>
+                    <Reveal delay={0.4}>
+                        <button
+                            onClick={() => setIsRatingModalOpen(true)}
+                            className="bg-white hover:bg-slate-50 text-brand-text border-2 border-slate-200 hover:border-brand-gold font-bold py-3 px-8 rounded-full transition-all shadow-sm hover:shadow-md flex items-center gap-2 group"
+                        >
+                            <Star size={20} className="text-brand-gold group-hover:scale-110 transition-transform" fill="currentColor" />
+                            הוסף את ההמלצה שלך
+                        </button>
+                    </Reveal>
+                </center>
             </div>
+
+            <RatingModal
+                isOpen={isRatingModalOpen}
+                onClose={() => setIsRatingModalOpen(false)}
+            />
         </section>
     );
 };
