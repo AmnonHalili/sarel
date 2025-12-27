@@ -5,7 +5,6 @@ import { FadeIn, Reveal } from './Reveal';
 // Import media
 import conferenceVideo from '../assets/media/conference_video.mp4';
 import videoPoster from '../assets/media/video_poster.jpg';
-import conference1 from '../assets/media/conference_1.jpg';
 import conference2 from '../assets/media/conference_2.jpg';
 import conference3 from '../assets/media/conference_3.jpg';
 
@@ -43,16 +42,7 @@ const MediaGallery = () => {
 
                     {/* Images Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
-                        <FadeIn delay={0.3} direction="up" className="md:col-span-2 h-48 md:h-auto">
-                            <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full">
-                                <img
-                                    src={conference1}
-                                    alt="כנס דיירים"
-                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                                />
-                            </div>
-                        </FadeIn>
-                        <FadeIn delay={0.4} direction="up" className="h-48 md:h-auto">
+                        <FadeIn delay={0.3} direction="up" className="h-48 md:h-auto">
                             <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full">
                                 <img
                                     src={conference2}
