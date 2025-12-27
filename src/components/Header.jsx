@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, Phone, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import sarelLogoCircle from '../assets/media/sarel-logo.jpeg';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +21,15 @@ const Header = () => {
         <>
             <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                    <div className="text-xl font-bold tracking-tight text-brand-text">
-                        שראל חלפון
+                    <div className="flex items-center gap-3">
+                        <img
+                            src={sarelLogoCircle}
+                            alt="לוגו שראל חלפון"
+                            className="w-12 h-12 rounded-full object-cover border-2 border-brand-gold shadow-sm"
+                        />
+                        <div className="text-xl font-bold tracking-tight text-brand-text">
+                            שראל חלפון
+                        </div>
                     </div>
 
                     <nav className="hidden md:flex items-center gap-8 text-gray-600">
@@ -81,8 +89,15 @@ const Header = () => {
                                 >
                                     <X size={24} />
                                 </button>
-                                <div className="text-lg font-bold text-brand-text">
-                                    שראל חלפון
+                                <div className="flex items-center gap-3">
+                                    <img
+                                        src={sarelLogoCircle}
+                                        alt="לוגו שראל חלפון"
+                                        className="w-10 h-10 rounded-full object-cover border-2 border-brand-gold shadow-sm"
+                                    />
+                                    <div className="text-lg font-bold text-brand-text">
+                                        שראל חלפון
+                                    </div>
                                 </div>
                             </div>
 
