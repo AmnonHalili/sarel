@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FadeIn } from './Reveal';
+import sarelLogo from '../assets/projects/Sarel-logo.jpg';
 
 const Hero = () => {
     return (
@@ -10,8 +11,8 @@ const Hero = () => {
             {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/hero-building.png"
-                    alt="התחדשות עירונית יוקרתית"
+                    src={sarelLogo}
+                    alt="לוגו Sarel - התחדשות עירונית"
                     className="w-full h-full object-cover"
                 />
                 {/* Darker Overlay for better text readability */}

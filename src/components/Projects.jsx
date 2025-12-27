@@ -44,7 +44,7 @@ const projects = [
     },
     {
         id: 4,
-        address: "ביאליק 36–40",
+        address: "ביאליק",
         tenants: 84,
         role: "מארגן דיירים",
         status: "בחירת חברה יזמית",
@@ -54,7 +54,7 @@ const projects = [
     },
     {
         id: 5,
-        address: "חננאל 2",
+        address: "חננאל",
         tenants: 18,
         role: "מארגן דיירים",
         status: "בחירת חברה יזמית",
@@ -64,7 +64,7 @@ const projects = [
     },
     {
         id: 6,
-        address: "חידא 3–11 + ביאליק 16–22",
+        address: 'חיד"א',
         tenants: 180,
         role: "מארגן דיירים",
         status: "בחירת נציגות דיירים",
