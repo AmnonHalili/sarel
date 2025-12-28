@@ -5,8 +5,9 @@ import { FadeIn, Reveal } from './Reveal';
 // Import media
 import conferenceVideo from '../assets/media/conference_video.mp4';
 import videoPoster from '../assets/media/video_poster.jpg';
-import conference2 from '../assets/media/conference_2.jpg';
-import conference3 from '../assets/media/conference_3.jpg';
+import conference2 from '../assets/projects/WhatsApp Image 2025-12-28 at 00.34.44.jpeg';
+import conference3 from '../assets/projects/WhatsApp Image 2025-12-28 at 00.37.56.jpeg';
+import conference4 from '../assets/projects/WhatsApp Image 2025-12-28 at 01.05.06.jpeg';
 
 const MediaGallery = () => {
     return (
@@ -41,8 +42,8 @@ const MediaGallery = () => {
                     </FadeIn>
 
                     {/* Images Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
-                        <FadeIn delay={0.3} direction="up" className="h-48 md:h-auto">
+                    <div className="grid grid-cols-1 gap-4 h-full">
+                        <FadeIn delay={0.3} direction="up" className="h-32 md:h-auto">
                             <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full">
                                 <img
                                     src={conference2}
@@ -51,11 +52,20 @@ const MediaGallery = () => {
                                 />
                             </div>
                         </FadeIn>
-                        <FadeIn delay={0.5} direction="up" className="h-48 md:h-auto">
+                        <FadeIn delay={0.5} direction="up" className="h-32 md:h-auto">
                             <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full">
                                 <img
                                     src={conference3}
                                     alt="סיור בשטח"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                />
+                            </div>
+                        </FadeIn>
+                        <FadeIn delay={0.7} direction="up" className="h-32 md:h-auto">
+                            <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full">
+                                <img
+                                    src={conference4}
+                                    alt="פעילות בשטח"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
                             </div>

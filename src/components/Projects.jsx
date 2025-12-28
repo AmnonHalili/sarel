@@ -7,7 +7,7 @@ import project1 from '../assets/projects/project1.jpg';
 import project2 from '../assets/projects/project2.jpg';
 
 import bergsonImg from '../assets/projects/bergson.png';
-import project4 from '../assets/projects/project4.jpg';
+import project4 from '../assets/projects/WhatsApp Image 2025-12-28 at 00.25.02.jpeg';
 import project5 from '../assets/projects/project5.jpg';
 import project6 from '../assets/projects/project6.jpg';
 

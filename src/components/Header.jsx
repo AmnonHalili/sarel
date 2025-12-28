@@ -10,7 +10,7 @@ const Header = () => {
 
     const menuItems = [
         { label: 'ראשי', href: '#' },
-        { label: 'מי אני', href: '#about' },
+        { label: 'מי אני', href: '#intro' },
         { label: 'התהליך', href: '#process' },
         { label: 'פרויקטים נבחרים', href: '#projects' },
         { label: 'למה לבחור בי', href: '#why-me' },
