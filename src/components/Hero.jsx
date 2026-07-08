@@ -9,12 +9,11 @@ const Hero = () => {
         <section className="relative min-h-[90vh] flex items-start justify-center pt-20 md:pt-32 overflow-hidden">
 
             {/* Background Image & Overlay */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 bg-white">
                 <img
                     src={sarelLogo}
                     alt="לוגו Sarel - התחדשות עירונית"
-                    className="w-full h-full object-cover"
-                    style={{ transform: 'scale(0.85)' }}
+                    className="w-full h-full object-contain md:object-cover object-center scale-95 md:scale-90"
                 />
                 {/* Darker Overlay for better text readability */}
                 <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply" />
