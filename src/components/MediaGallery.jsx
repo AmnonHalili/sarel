@@ -3,8 +3,8 @@ import { Play } from 'lucide-react';
 import { FadeIn, Reveal } from './Reveal';
 
 // Import media
-import conferenceVideo from '../assets/media/conference_video.mp4';
-import videoPoster from '../assets/media/video_poster.jpg';
+import newImage1 from '../assets/media/new_image_1.jpeg';
+import newImage2 from '../assets/media/new_image_2.jpeg';
 import conference2 from '../assets/projects/WhatsApp Image 2025-12-28 at 00.34.44.jpeg';
 import conference3 from '../assets/projects/WhatsApp Image 2025-12-28 at 00.37.56.jpeg';
 import conference4 from '../assets/projects/WhatsApp Image 2025-12-28 at 01.05.06.jpeg';
@@ -27,19 +27,27 @@ const MediaGallery = () => {
                 </center>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-                    {/* Video Section - Prominent */}
-                    <FadeIn delay={0.2} direction="right" className="h-full">
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[400px] border border-gray-100 group">
-                            <video
-                                controls
-                                className="w-full h-full object-cover"
-                                poster={videoPoster}
-                            >
-                                <source src={conferenceVideo} type="video/mp4" />
-                                הדפדפן שלך לא תומך בניגון וידאו.
-                            </video>
-                        </div>
-                    </FadeIn>
+                    {/* New Images Section replacing Video */}
+                    <div className="grid grid-cols-1 gap-4 h-full">
+                        <FadeIn delay={0.2} direction="right" className="h-48 md:h-auto">
+                            <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full">
+                                <img
+                                    src={newImage1}
+                                    alt="מפגש דיירים 1"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                />
+                            </div>
+                        </FadeIn>
+                        <FadeIn delay={0.4} direction="right" className="h-48 md:h-auto">
+                            <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full">
+                                <img
+                                    src={newImage2}
+                                    alt="מפגש דיירים 2"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                />
+                            </div>
+                        </FadeIn>
+                    </div>
 
                     {/* Images Grid */}
                     <div className="grid grid-cols-1 gap-4 h-full">

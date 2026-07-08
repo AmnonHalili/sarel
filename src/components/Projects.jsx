@@ -25,7 +25,7 @@ const projects = [
     {
         id: 2,
         address: "ביאליק 8–12",
-        tenants: 32,
+        tenants: 36,
         role: "מארגן דיירים",
         status: "הושלם התהליך, קידום ברשויות",
         stage: "שלב 5 | קידום להיתרים וביצוע",
@@ -35,7 +35,7 @@ const projects = [
     {
         id: 3,
         address: "ברגסון 1–5",
-        tenants: 32,
+        tenants: 36,
         role: "מארגן דיירים",
         status: "הושלם התהליך, קידום ברשויות",
         stage: "שלב 5 | קידום להיתרים וביצוע",
@@ -48,9 +48,9 @@ const projects = [
         tenants: 84,
         role: "מארגן דיירים",
         status: "בחירת חברה יזמית",
-        stage: "שלב 4 | מכרז יזמים ומשא ומתן",
+        stage: "שלב 5 | קידום להיתרים וביצוע",
         image: project4,
-        stageNumber: 4
+        stageNumber: 5
     },
     {
         id: 5,
@@ -68,9 +68,9 @@ const projects = [
         tenants: 180,
         role: "מארגן דיירים",
         status: "בחירת נציגות דיירים",
-        stage: "שלב 2 | מינוי נציגות",
+        stage: "שלב 4 | מכרז יזמים ומשא ומתן",
         image: project6,
-        stageNumber: 2
+        stageNumber: 4
     }
 ];
 

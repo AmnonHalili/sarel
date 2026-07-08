@@ -1,115 +1,170 @@
 import React from 'react';
-import { Users, HardHat, FileCheck, Scale, UserCheck } from 'lucide-react';
+import { Users, Handshake, Trophy, FileText, Hourglass } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FadeIn, Reveal } from './Reveal';
 
 const steps = [
     {
         id: 1,
-        title: 'הנעת המתחם ובניית אמון',
-        description: 'כניסה יזומה למתחם, איסוף פרטי קשר וקיום כנסים נפרדים לכל בניין. יצירת אמון עם הדיירים והצגת התהליך, הזכויות והשלבים הצפויים בצורה ברורה ושקופה.',
-        icon: Users
+        title: '1. התארגנות ראשונית ובחירת נציגות',
+        bullets: [
+            'קיום אסיפת דיירים ראשונה והסבר פוטנציאל.',
+            'בחירת נציגות רשמית ושיתוף פעולה.'
+        ],
+        bottomLine: 'השורה התחתונה: כוח קבוצתי מאוחד.',
+        icon: Users,
+        color: {
+            primary: 'bg-[#1e528b]',
+            border: 'border-[#1e528b]',
+            text: 'text-[#1e528b]'
+        }
     },
     {
         id: 2,
-        title: 'מינוי נציגות דיירים',
-        description: 'בחירת נציגות מקרב הדיירים ואישור של 51% מבעלי הדירות להסמכתה כנציגות רשמית המייצגת את המתחם.',
-        icon: UserCheck
+        title: '2. מינוי אנשי מקצוע מטעם הדיירים',
+        bullets: [
+            'בחירת עורך דין ומפקח בנייה מנוסה.',
+            'שמירה מלאה על האינטרסים שלכם.'
+        ],
+        bottomLine: 'השורה התחתונה: הגנה מקצועית מלאה.',
+        icon: Handshake,
+        color: {
+            primary: 'bg-[#ee8012]',
+            border: 'border-[#ee8012]',
+            text: 'text-[#ee8012]'
+        }
     },
     {
         id: 3,
-        title: 'בחירת עורך דין דיירים',
-        description: 'הנציגות בוחרת עורך דין מטעמה, כולל אפשרות לעורך דין שמוצע על ידי הדיירים עצמם. אני מלווה את תהליך הבחירה ומסייע בקידום התקשרות מקצועית ונכונה.',
-        icon: Scale
+        title: '3. מכרז יזמים ובחירת חברה מבצעת',
+        bullets: [
+            'בחינת ניסיון, חוסן כלכלי ותמורות.',
+            'בחירת ההצעה הטובה ביותר.'
+        ],
+        bottomLine: 'השורה התחתונה: ביטחון ותמורות מקסימליות.',
+        icon: Trophy,
+        color: {
+            primary: 'bg-[#3ca445]',
+            border: 'border-[#3ca445]',
+            text: 'text-[#3ca445]'
+        }
     },
     {
         id: 4,
-        title: 'מכרז יזמים ומשא ומתן',
-        description: 'ניהול מכרז יזמים מסודר בין מספר חברות מתאימות לפרויקט וניהול משא ומתן ביניהן להשגת מקסימום תמורות עבור הדיירים. הנציגות היא זו שבוחרת את החברה היזמית עמה יתקדם הפרויקט.',
-        icon: HardHat
+        title: '4. חתימה על הסכם פינוי-בינוי וקידום תוכניות',
+        bullets: [
+            'משא ומתן קשוח וקבלת ערבויות.',
+            'קידום ואישור תוכניות בנייה (תב"ע).'
+        ],
+        bottomLine: 'השורה התחתונה: הסכם מוגן משפטית.',
+        icon: FileText,
+        color: {
+            primary: 'bg-[#892383]',
+            border: 'border-[#892383]',
+            text: 'text-[#892383]'
+        }
     },
     {
         id: 5,
-        title: 'קידום משפטי והתקדמות לביצוע',
-        description: 'קידום ההסכם המשפטי מול החברה היזמית הנבחרת והשגת 67% חתימות והערות אזהרה לטובת פינוי בינוי. לאחר מכן, קידום הפרויקט לשלבי תכנון, היתרים וביצוע.',
-        icon: FileCheck
+        title: '5. קידום תוכניות ואישורים סטטוטוריים',
+        bullets: [
+            'גיבוש והגשת תוכניות לוועדה המקומית והמחוזית.',
+            'ביצוע תיקונים והתאמות מול גורמי התכנון.',
+            'קיום דיונים, שימועים, והתנגדויות (במידה ויש).',
+            'השלמת דרישות למתן היתר הבנייה.'
+        ],
+        bottomLine: 'השורה התחתונה: תהליך יסודי וממושך בדרך לאישור הסופי.',
+        icon: Hourglass,
+        color: {
+            primary: 'bg-[#189baf]',
+            border: 'border-[#189baf]',
+            text: 'text-[#189baf]'
+        }
     }
 ];
 
 const Process = () => {
     return (
-        <section id="process" className="py-24 bg-slate-50 border-t border-gray-200 relative overflow-hidden">
-            {/* Background accent */}
-            <div className="absolute top-1/4 right-0 w-96 h-96 bg-brand-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+        <section id="process" className="py-24 bg-[#eef6fc] relative overflow-hidden" dir="rtl">
+            {/* Background City Silhouette Concept */}
+            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{
+                backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 49px, #1e528b 49px, #1e528b 50px), repeating-linear-gradient(90deg, transparent, transparent 49px, #1e528b 49px, #1e528b 50px)',
+                backgroundSize: '50px 50px'
+            }}></div>
 
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 relative z-10">
                 <center className="mb-16">
                     <Reveal>
-                        <h2 className="text-3xl md:text-5xl font-bold text-brand-text text-center mb-6">
-                            דיירים במרכז. <span className="text-brand-gold">אמון ושקיפות מלאה.</span>
+                        <h2 className="text-4xl md:text-5xl font-bold text-[#1e528b] text-center mb-6 drop-shadow-sm">
+                            מתווה השלבים לקידום הפרויקט
                         </h2>
-                    </Reveal>
-                    <Reveal delay={0.2}>
-                        <div className="max-w-3xl mx-auto text-center space-y-4 text-gray-600 px-4">
-                            <p className="text-xl font-medium text-brand-text">
-                                פרויקט שמצליח. פינוי בינוי צריך להתחיל נכון.
-                            </p>
-                            <p className="leading-relaxed">
-                                לא בלחצים, לא בהבטחות כלליות ולא בכפייה של חברות יזמיות, אלא בתהליך מסודר שבו הדיירים הם בעלי הכוח והשליטה.
-                            </p>
-                            <p className="leading-relaxed">
-                                אני מלווה מתחמי פינוי בינוי מהשלב הראשון בשטח ועד קידום הפרויקט להיתרים וביצוע, תוך בניית אמון, ארגון הדיירים וניהול משא ומתן מקצועי שמטרתו אחת: מקסימום תמורות וביטחון מלא לבעלי הדירות.
-                            </p>
-                        </div>
-                    </Reveal>
-                    <Reveal delay={0.4}>
-                        <h3 className="text-2xl font-bold text-brand-text mt-12 mb-4">איך זה עובד בפועל</h3>
                     </Reveal>
                 </center>
 
-                <div className="relative max-w-4xl mx-auto">
-                    {/* Vertical Line - Fixed Height for now, usually would animate height */}
-                    <motion.div
-                        initial={{ height: 0 }}
-                        whileInView={{ height: "100%" }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 2, ease: "easeInOut" }}
-                        className="absolute top-0 bottom-0 right-[27px] md:right-1/2 md:-mr-[1px] w-[2px] bg-gradient-to-b from-brand-gold/0 via-brand-gold/50 to-brand-gold/0"
-                    />
+                <div className="max-w-4xl mx-auto space-y-24 md:space-y-16 mt-12 md:mt-0">
+                    {steps.map((step, index) => {
+                        const Icon = step.icon;
+                        const isEven = index % 2 === 1; // 0-indexed, so 1 is 2nd step
+                        
+                        return (
+                            <FadeIn key={step.id} delay={index * 0.1} direction="up">
+                                <div className="relative">
+                                    
+                                    {/* Main Card */}
+                                    <div className={`relative bg-white border-[5px] md:border-[6px] ${step.color.border} rounded-[2rem] md:rounded-[2.5rem] flex flex-col md:flex-row shadow-lg z-10`}>
+                                        
+                                        {/* Floating Icon for Desktop */}
+                                        <div className={`absolute top-1/2 -translate-y-1/2 ${isEven ? 'right-0 translate-x-1/2' : 'left-0 -translate-x-1/2'} hidden md:flex w-28 h-28 rounded-full border-[6px] ${step.color.border} bg-white items-center justify-center shadow-xl z-20`}>
+                                            <Icon size={48} className={step.color.text} strokeWidth={1.5} />
+                                        </div>
 
-                    <div className="space-y-12 md:space-y-20">
-                        {steps.map((step, index) => {
-                            const Icon = step.icon;
-                            return (
-                                <div key={step.id} className={`relative flex items-center md:items-start gap-8 md:gap-0 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                                        {/* Floating Icon for Mobile (Top Center) */}
+                                        <div className={`absolute -top-10 left-1/2 -translate-x-1/2 md:hidden w-20 h-20 rounded-full border-[5px] ${step.color.border} bg-white flex items-center justify-center shadow-lg z-20`}>
+                                            <Icon size={36} className={step.color.text} strokeWidth={1.5} />
+                                        </div>
 
-                                    {/* Icon & Number Circle */}
-                                    <div className={`absolute top-0 right-0 md:relative md:w-1/2 flex z-10 md:pb-0 shrink-0 ${index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'}`}>
-                                        <FadeIn delay={index * 0.2} direction="down">
-                                            <div className={`w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center relative shadow-lg ${index % 2 === 0 ? 'md:-ml-7' : 'md:-mr-7'} right-0`}>
-                                                <Icon size={24} className="text-brand-gold" />
-                                            </div>
-                                        </FadeIn>
+                                        {/* Content Area */}
+                                        <div className={`p-6 pt-14 md:p-8 w-full ${isEven ? 'md:pr-20' : 'md:pl-20'}`}>
+                                            <h3 className="text-xl md:text-3xl font-bold mb-4 text-gray-800 text-center md:text-right">
+                                                {step.title}
+                                            </h3>
+                                            
+                                            <ul className="text-gray-700 space-y-3 md:space-y-2 text-base md:text-lg font-medium">
+                                                {step.bullets.map((bullet, idx) => (
+                                                    <li key={idx} className="flex items-start gap-2 md:gap-3">
+                                                        <span className={`mt-1 font-bold ${step.color.text}`}>*</span> 
+                                                        <span>{bullet}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
-
-                                    {/* Content Card */}
-                                    <div className={`w-full md:w-1/2 pr-20 md:pr-0 pl-4 md:pl-0 ${index % 2 === 0 ? 'md:pr-12 text-right' : 'md:pl-12 text-right'}`}>
-                                        <FadeIn delay={index * 0.2 + 0.2} direction={index % 2 === 0 ? "right" : "left"}>
-                                            <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
-                                                <div className="text-brand-gold font-bold text-sm mb-2 tracking-wider">שלב {step.id}</div>
-                                                <h3 className="text-2xl font-bold text-brand-text mb-3">{step.title}</h3>
-                                                <p className="text-gray-600 font-light leading-relaxed">
-                                                    {step.description}
-                                                </p>
-                                            </div>
-                                        </FadeIn>
+                                    
+                                    {/* Bottom Line attached to the card */}
+                                    <div className={`relative -mt-4 md:-mt-6 mx-auto w-[95%] md:w-[80%] ${step.color.primary} text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-b-[1.5rem] md:rounded-b-[2rem] text-center shadow-md z-0`}>
+                                        <div className="pt-3 md:pt-4 text-base md:text-xl leading-tight md:leading-normal">
+                                            {step.bottomLine}
+                                        </div>
+                                        {/* Triangle pointing down */}
+                                        {index < steps.length - 1 && (
+                                            <div className={`absolute -bottom-3 left-1/2 -translate-x-1/2 w-6 h-6 ${step.color.primary} rotate-45`}></div>
+                                        )}
                                     </div>
 
                                 </div>
-                            );
-                        })}
-                    </div>
+                            </FadeIn>
+                        );
+                    })}
                 </div>
+
+                {/* Footer Note */}
+                <FadeIn delay={0.6}>
+                    <div className="max-w-4xl mx-auto mt-16 p-6 bg-white border-2 border-gray-200 rounded-2xl text-center shadow-lg">
+                        <p className="text-gray-800 text-xl font-bold">
+                            **שימו לב: כל השירותים ממומנים במלואם על ידי היזם – ללא שום עלות מצד הדיירים!
+                        </p>
+                    </div>
+                </FadeIn>
             </div>
         </section>
     );

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, Phone, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import sarelLogoCircle from '../assets/media/sarel-logo.jpeg';
+import sarelLogoCircle from '../assets/media/sharel-logo-new.jpeg';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

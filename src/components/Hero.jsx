@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FadeIn } from './Reveal';
-import sarelLogo from '../assets/projects/Sarel-logo.jpg';
+import sarelLogo from '../assets/media/sharel-logo-new.jpeg';
 
 const Hero = () => {
     return (
