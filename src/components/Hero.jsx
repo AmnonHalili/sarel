@@ -32,7 +32,7 @@ const Hero = () => {
 
                     <FadeIn delay={0.4} direction="up" fullWidth>
                         <div className="max-w-3xl mx-auto text-center">
-                            <strong className="text-brand-gold font-bold block mb-4 text-2xl drop-shadow-md">שראל חלפון</strong>
+                            <strong className="text-brand-gold font-bold block mb-4 text-2xl drop-shadow-md">שראל ישראל חלפון</strong>
                             <p className="text-xl md:text-2xl text-gray-100 leading-relaxed font-light drop-shadow-md">
                                 מארגן דיירים שדואג לאינטרסים שלכם בלבד.
                             </p>

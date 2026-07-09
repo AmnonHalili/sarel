@@ -24,11 +24,11 @@ const Header = () => {
                     <div className="flex items-center gap-3">
                         <img
                             src={sarelLogoCircle}
-                            alt="לוגו שראל חלפון"
+                            alt="לוגו שראל ישראל חלפון"
                             className="w-12 h-12 rounded-full object-cover border-2 border-brand-gold shadow-sm"
                         />
                         <div className="text-xl font-bold tracking-tight text-brand-text">
-                            שראל חלפון
+                            שראל ישראל חלפון
                         </div>
                     </div>
 
@@ -92,11 +92,11 @@ const Header = () => {
                                 <div className="flex items-center gap-3">
                                     <img
                                         src={sarelLogoCircle}
-                                        alt="לוגו שראל חלפון"
+                                        alt="לוגו שראל ישראל חלפון"
                                         className="w-10 h-10 rounded-full object-cover border-2 border-brand-gold shadow-sm"
                                     />
                                     <div className="text-lg font-bold text-brand-text">
-                                        שראל חלפון
+                                        שראל ישראל חלפון
                                     </div>
                                 </div>
                             </div>
