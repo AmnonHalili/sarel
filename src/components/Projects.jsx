@@ -48,9 +48,9 @@ const projects = [
         tenants: 84,
         role: "מארגן דיירים",
         status: "בחירת חברה יזמית",
-        stage: "שלב 5 | קידום להיתרים וביצוע",
+        stage: "שלב 4 | חתימה על הסכם יזם",
         image: project4,
-        stageNumber: 5
+        stageNumber: 4
     },
     {
         id: 5,
@@ -68,9 +68,9 @@ const projects = [
         tenants: 180,
         role: "מארגן דיירים",
         status: "בחירת נציגות דיירים",
-        stage: "שלב 4 | מכרז יזמים ומשא ומתן",
+        stage: "שלב 3 | מכרז יזמים ומשא ומתן",
         image: project6,
-        stageNumber: 4
+        stageNumber: 3
     }
 ];
 
@@ -78,6 +78,7 @@ const getStageColor = (stage) => {
     switch (stage) {
         case 5: return "bg-green-100 text-green-700 border-green-200";
         case 4: return "bg-blue-100 text-blue-700 border-blue-200";
+        case 3: return "bg-teal-100 text-teal-700 border-teal-200";
         case 2: return "bg-orange-100 text-orange-700 border-orange-200";
         default: return "bg-gray-100 text-gray-700 border-gray-200";
     }

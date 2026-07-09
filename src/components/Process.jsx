@@ -23,7 +23,7 @@ const steps = [
         id: 2,
         title: '2. מינוי אנשי מקצוע מטעם הדיירים',
         bullets: [
-            'בחירת עורך דין ומפקח בנייה מנוסה.',
+            'בחירת עורך דין, מפקח בנייה ושמאי בעלי ניסיון.',
             'שמירה מלאה על האינטרסים שלכם.'
         ],
         bottomLine: 'השורה התחתונה: הגנה מקצועית מלאה.',
@@ -160,8 +160,8 @@ const Process = () => {
                 {/* Footer Note */}
                 <FadeIn delay={0.6}>
                     <div className="max-w-4xl mx-auto mt-16 p-6 bg-white border-2 border-gray-200 rounded-2xl text-center shadow-lg">
-                        <p className="text-gray-800 text-xl font-bold">
-                            **שימו לב: כל השירותים ממומנים במלואם על ידי היזם – ללא שום עלות מצד הדיירים!
+                        <p className="text-gray-800 text-lg font-bold">
+                            **שימו לב: כל השירותים ממומנים במלואם על ידי היזם שייבחר ע״י הדיירים – ללא שום עלות מצד הדיירים!
                         </p>
                     </div>
                 </FadeIn>
